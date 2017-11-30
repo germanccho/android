@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.clinica.myapplication.Controladores.ControladorObraSocial;
 import com.example.clinica.myapplication.R;
@@ -57,20 +58,18 @@ public class ConfiguracionOS extends AppCompatActivity {
             public void onClick(View v) {
                 ControladorObraSocial controlador = new ControladorObraSocial(context);
 
-
-                contador = osView.getAdapter().getItemCount();
-
+                contador = ((ConfiguracionOSAdapter)osView.getAdapter()).estado.size();
 
                 for (int i=0; i < contador; i++ ) {
                     nombre = adapter.nombre.get(i);
                     est = adapter.estado.get(i);
                     cos = adapter.coseguro.get(i);
 
+                    controlador.setDatos(nombre, est, cos);
+                    controlador.cargarDatos();
+                }
 
-                controlador.setDatos(nombre, est, cos);
-                controlador.cargarDatos();
-               }
-               finish();
+                finish();
             }
         });
     }
