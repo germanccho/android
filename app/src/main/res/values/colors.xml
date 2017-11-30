@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1ABC9C</color>
+    <color name="colorPrimaryDark">#148F77</color>
+    <color name="colorAccent">#148F77</color>
+    <color name="colorBlanco">#FFF</color>
+
+
+
+    <color name="backgroundColor">#1ABC9C</color>
+    <color name="textColor">#FFF</color>
+    <color name="diaSeleccionadoColorFondo">#145A32</color>
+    <color name="diaColorFondo">#145A32</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="diaDeshabilitado">#A9F5E1</color>
+    <color name="transparente">#50000000</color>
+    <color name="transparente2">#00ffffff</color>
+
+
+
+
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".UI.View.ObraSocial.EditarObraSocial"
+    android:background="@drawable/gradient">
+
+    <include
+        layout="@layout/toolbar_obra_social"
+        android:id="@+id/toolbar"></include>
+
+
+
+
+    <TextView
+        style="@style/textTituloCompletar"
+        android:text="Nombre"
+        android:id="@+id/textView5"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNombreOS" />
+
+
+    <TextView
+        style="@style/textTituloCompletar"
+        android:text="Cuil"
+        android:id="@+id/textView7" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCuilOS"
+        android:inputType="number"/>
+
+
+    <TextView
+        style="@style/textTituloCompletar"
+        android:text="Direccion"
+        android:id="@+id/textView9" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDireccionOS" />
+
+    <TextView
+        style="@style/textTituloCompletar"
+        android:text="Teléfono"
+        android:id="@+id/textView10" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTelefonoOS"
+        android:inputType="phone"/>
+
+    <TextView
+        style="@style/textTituloCompletar"
+        android:text="Email"
+        android:id="@+id/textView11" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmailOS" />
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="100dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        app:cardBackgroundColor="#00ffffff"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:id="@+id/btnVolverGestionarOS"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/textobotones2"
+                android:text="Volver" />
+
+            <ImageView
+                style="@style/iconoBotones"
+                android:src="@drawable/icon_flecha_atras" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="#00ffffff"
+        app:cardCornerRadius="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEdtActualizarOS"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:text="Actualizar"
+                style="@style/textobotones2"
+                android:textSize="17dp"
+                />
+            <ImageView
+                style="@style/iconoBotones"
+                android:src="@drawable/ic_actualizar"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+</LinearLayout>

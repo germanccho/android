@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.View.ObraSocial.ConfiguracionOS"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_obra_social"
+        android:id="@+id/toolbar"></include>
+
+
+    <TableRow
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+    <TextView
+        android:id="@+id/txtNombreOS"
+        style="@style/textoTituloTabla"
+        android:layout_width="150dp"
+        android:text="Obra Social" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        style="@style/textoTituloTabla"
+        android:layout_width="150dp"
+        android:text="Estado" />
+
+    <TextView
+        android:id="@+id/txtCoseguro"
+        style="@style/textoTituloTabla"
+        android:layout_width="150dp"
+        android:text="Coseguro" />
+
+   </TableRow>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/configuracionOS"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_gravity="center"/>
+
+
+
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="#00ffffff"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:id="@+id/btnVolverGestionarOS"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/textobotones2"
+                    android:text="Volver" />
+
+                <ImageView
+                    style="@style/iconoBotones"
+                    android:src="@drawable/icon_flecha_atras" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            app:cardBackgroundColor="#00ffffff"
+            app:cardCornerRadius="4dp"
+            >
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnActualizarEstadoOS"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:text="Actualizar"
+                    style="@style/textobotones2"
+                    android:textSize="17dp"
+                    />
+                <ImageView
+                    style="@style/iconoBotones"
+                    android:src="@drawable/ic_actualizar"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+</LinearLayout>
