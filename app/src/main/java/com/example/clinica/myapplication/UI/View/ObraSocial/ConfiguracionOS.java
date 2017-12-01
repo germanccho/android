@@ -58,7 +58,7 @@ public class ConfiguracionOS extends AppCompatActivity {
             public void onClick(View v) {
                 ControladorObraSocial controlador = new ControladorObraSocial(context);
 
-                contador = ((ConfiguracionOSAdapter)osView.getAdapter()).estado.size();
+                contador = ((ConfiguracionOSAdapter)osView.getAdapter()).nombre.size();
 
                 for (int i=0; i < contador; i++ ) {
                     nombre = adapter.nombre.get(i);
