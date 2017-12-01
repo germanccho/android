@@ -53,6 +53,10 @@ public class ConfiguracionOSAdapter extends RecyclerView.Adapter<ConfiguracionOS
     public void onBindViewHolder(final ConfiguracionOSHolder holder, int position) {
 
         final int positionPadre = position;
+        holder.nombreOS.setText(OS.get(position).getNombre());
+        String valor = OS.get(position).getEstado();
+        pos = ConsultarValor(valor);
+        holder.estado.setSelection(pos);
 
         holder.nombreOS.setText(OS.get(position).getNombre());
         holder.estado.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -125,6 +129,24 @@ public class ConfiguracionOSAdapter extends RecyclerView.Adapter<ConfiguracionOS
             filtro = new FiltroConfiguracionOS(listaFiltrada, this);
         }
         return filtro;
+    }
+    
+      public int ConsultarValor(String valor){
+        int v;
+        if (valor.equals("Al Día")){
+            v = 0;
+        }else {
+            if (valor.equals("Atrasada")){
+                v = 1;
+            }else {
+                if (valor.equals("Suspendida")){
+                v = 2;
+            }else{
+            v=0;
+            }
+            }
+        }
+        return v;
     }
 
 }
