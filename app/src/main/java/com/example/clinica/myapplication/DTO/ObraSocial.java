@@ -11,7 +11,7 @@ public class ObraSocial implements Serializable {
     String nombre, direccion, email, cuil, telefono, coseguro, estado;
 
 
-    public ObraSocial(long id, String nombre, String cuil, String direccion, String telefono, String email, String coseguro, String estado) {
+    public ObraSocial(long id, String nombre, String cuil, String direccion, String telefono, String email,  String estado, String coseguro) {
 
         this.id = id;
         this.nombre = nombre;
